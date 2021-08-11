@@ -1,0 +1,13 @@
+/*  
+    Programa de Hola
+    Elaborado por: Darío Peñaloza
+    Fecha: 05 de Agosto 2021
+*/
+#include <stdio.h>
+
+int main(){
+
+    printf("Hola panteras!!\n");
+
+    return 0;
+}
