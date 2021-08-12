@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19440\viewh11820\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Ejercicio de aplicacion.\
+\
+Hacer un programa para encender 4 leds en secuencia exclusiva ascendente durante 5 segundos, encender en secuencia aditiva durante 5 segundos, enceder en secuencia descendente exclusiva durante 5 segundos, encender en secuencia descendente aditiva durante 5 segundos. Repetir en este orden durante durante 30 segundo y repetir en orden inverso durante 90 segundos minutos. Que esto se realice solo 4 veces. Despues todos los leds se apagan. Las exclusivas las tienen que hacer con operadores incrementales o decrementales. Las aditivas las tienen que hacer con operadores bitwise. Mientras se envia por mqtt una suma incremental mas el valor en binario de la secuencia de los leds.\
+\
+Cada estado del led dura 0.2 segundos\
+\
+LEDS= 0000\
+\
+Secuencia ascendente exclusiva:\
+0000\
+1000\
+0100\
+0010\
+0001\
+\
+0000 0000\
+0000 1000\
+0001 0000 <- No\
+0000 0000\
+0000 0001\
+\
+Secuencia aditiva esxclusiva:\
+0000\
+1000\
+1100\
+1110\
+1111\
+\
+Todo debe ser programado haciendo uso de las logicas no bloqueantes.}
