@@ -78,7 +78,7 @@ int main(){
             if(opcion==3) total=multi(num1, num2);  //Llama a función multiplicación
             if(opcion==4) total=div(num1, num2);    //Llama a función división
         
-            printf("El resultado es: %lf\n", total);    //Muestra del resultado de la operación
+            printf("El resultado es: %.2lf\n", total);    //Muestra del resultado de la operación //.2LF PARA QUE IMPRIMA CON DOS CIFRAS SIGNNIFICATIVAS
             total=0;    //Regresa el valor a 0 para realizar nuevas operaciones
 
             printf("¿Quiere hacer otra operación? ('y' para si, cualquier otra cosa no): ");
