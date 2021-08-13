@@ -7,6 +7,6 @@ Nombre: Luis Angel Samtiago Rosales.
 Nombre
 Laura
 =======
-Nombre: Octavio
+Nombre: Octavio Ramírez
 
 
