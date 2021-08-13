@@ -11,10 +11,12 @@
  * 3. Subirlo al repositorio
  * 4. Elegir el codigo de un compañero para revision
  * 
+ * Modificaciones
+ * 12 de agosto de 2021. Revisado por Fernando Daniel Ramirez
  * */
 
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 
 int menu(){
 	int r=0;
@@ -33,18 +35,23 @@ int main(){
     int i,r,a,b,res;
 	do{
 		r=menu();
-		if(r<5){
-			printf("\nIntrodusca los valores:\n");
+		res=0;
+		if(r>0 && r<5){
+			printf("\nIntroduzca los valores:\n");
 			printf("\n Valor a: "); scanf("%i",&a);
 			printf("\n Valor b: "); scanf("%i",&b);
 			switch (r){
 				case 1: res=a+b; break;
 				case 2: res=a-b; break;
 				case 3: res=a*b; break;
-				case 4: res=a/b; break;
-				default: printf("\n Opcion invalida, intente nuevamente"); break;
+				case 4: if(b!=0){res=a/b;} break;
+				//default: printf("\n Opcion invalida, intente nuevamente"); break;
 			}
-		printf("\nEl resultado es: %i",res);		
+			printf("\nEl resultado es: %i",res);
+		}
+		else
+		{
+			printf("\n Opcion invalida, intente nuevamente");
 		}
 	}while(r != 5);
     return 0;
