@@ -124,4 +124,5 @@ void imprimirMenu(){
 
 int main(){
     imprimirMenu();
+    return 0;
 }
